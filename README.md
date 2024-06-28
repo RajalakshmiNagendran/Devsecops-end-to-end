@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="./public/assets/Picture4.png" alt="Logo" width="100%" height="100%">
+  <img src="./public/assets/output.png" alt="Logo" width="100%" height="100%">
 </div>
 
 # Deploy Netflix Clone on Cloud using Jenkins - DevSecOps Project!
