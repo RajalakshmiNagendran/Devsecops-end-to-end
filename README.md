@@ -319,7 +319,7 @@ sudo systemctl restart jenkins
 
 ```   
 
-**Phase 4: Notification**
+# Phase 4: Notification 
 
 1. **Implement Notification Services:**
     - Set up email notifications in Jenkins or other notification mechanisms.
@@ -374,17 +374,18 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
   Now verify the creation: kubectl get hpa & kubectl describe hpa my-app-hpa
 ```
 
-**Phase 6: Monitoring**
+# Phase 6: Monitoring
 
 1. **Install Datadog agent:**
 
    Set up Datadog to monitor your application.
 
-   1. Integrate kubernetes and apply configurations following the documentation provided in the configuration itself.
-   2. Follow this link ... https://www.datadoghq.com/blog/monitoring-kubernetes-with-datadog/
-   3. Deploy the "cluster-agent-rbac.yaml" and rbac.yaml files
-   4. Deploy the "datadog-cluster-agent.yaml" and "datadog-agent.yaml" files
-   5. create datadog-secret and datadog-auth-token followed by apply datadog-cluster-agent & datadog-agent.
+   1. Go to https://www.datadoghq.com/ create a login
+   2. In Integrations -> Agent -> select kubernetes, follow the steps provided
+   3. Follow this link ... https://www.datadoghq.com/blog/monitoring-kubernetes-with-datadog/
+   4. Deploy the "cluster-agent-rbac.yaml" and rbac.yaml files
+   5. Deploy the "datadog-cluster-agent.yaml" and "datadog-agent.yaml" files
+   6. create datadog-secret and datadog-auth-token followed by apply datadog-cluster-agent & datadog-agent.
 
 ### Deploy Application with ArgoCD
 
