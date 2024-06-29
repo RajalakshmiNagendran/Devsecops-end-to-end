@@ -62,7 +62,7 @@ Now recreate the Docker image with your api key:
 docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
 ```
 
-**Phase 2: Security**
+### **Phase 2: Security**
 
 1. **Install SonarQube and Trivy:**
     - Install SonarQube and Trivy on the EC2 instance to scan for vulnerabilities.
@@ -96,7 +96,7 @@ docker build --build-arg TMDB_V3_API_KEY=<your-api-key> -t netflix .
     - Integrate SonarQube with your CI/CD pipeline.
     - Configure SonarQube to analyze code for quality and security issues.
 
-**Phase 3: CI/CD Setup**
+## **Phase 3: CI/CD Setup**
 
 1. **Install Jenkins for Automation:**
     - Install Jenkins on the EC2 instance to automate deployment:
@@ -319,12 +319,12 @@ sudo systemctl restart jenkins
 
 ```   
 
-# Phase 4: Notification 
+### **Phase 4: Notification**
 
 1. **Implement Notification Services:**
     - Set up email notifications in Jenkins or other notification mechanisms.
 
-# Phase 5: Kubernetes
+### **Phase 5: Kubernetes**
 
 ## Create Kubernetes Cluster with Nodegroups
 
@@ -374,7 +374,7 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
   Now verify the creation: kubectl get hpa & kubectl describe hpa my-app-hpa
 ```
 
-# Phase 6: Monitoring
+### **Phase 6: Monitoring**
 
 1. **Install Datadog agent:**
 
