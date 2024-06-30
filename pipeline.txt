@@ -75,9 +75,7 @@ pipeline{
                 script{
                     dir('Kubernetes') {
                         withKubeConfig(caCertificate: '', clusterName: '', contextName: '', credentialsId: 'k8s', namespace: '', restrictKubeConfigAccess: false, serverUrl: '') {
-                                //sh 'kubectl set image deployment/netflix-app netflix-app=netflix-app:${BUILD_NUMBER}'
-                                //kubectl set image deployment/<deployment_name> <container_name>=<new_image>:<tag>
-                                //Replace <deployment_name> with the name of your deployment, <container_name> with the name of the container within the                                    //pod that you’re updating, and <new_image>:<tag> with the new image version.
+                                sh 'kubectl set image deployment/netflix-app netflix-app=netflix-app:latest'                
                                 sh 'kubectl apply -f deployment.yml'
                                 sh 'kubectl apply -f service.yml'
                         }   
