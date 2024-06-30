@@ -440,20 +440,3 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
 <div align="center">
   <img src="./public/assets/Capture.PNG" alt="Logo" width="100%" height="100%">
 </div>
-
-### Deploy Application with ArgoCD
-
-1. **Install ArgoCD:**
-
-   You can install ArgoCD on your Kubernetes cluster by following the instructions provided in the [EKS Workshop](https://archive.eksworkshop.com/intermediate/290_argocd/install/) documentation.
-
-2. **Set Your GitHub Repository as a Source:**
-
-   After installing ArgoCD, you need to set up your GitHub repository as a source for your application deployment. This typically involves configuring the connection to your repository and defining the source for your ArgoCD application. The specific steps will depend on your setup and requirements.
-
-3. **Create an ArgoCD Application:**
-   - `name`: Set the name for your application.
-   - `destination`: Define the destination where your application should be deployed.
-   - `project`: Specify the project the application belongs to.
-   - `source`: Set the source of your application, including the GitHub repository URL, revision, and the path to the application within the repository.
-   - `syncPolicy`: Configure the sync policy, including automatic syncing, pruning, and self-healing.
