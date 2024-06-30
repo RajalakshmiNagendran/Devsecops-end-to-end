@@ -353,6 +353,9 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
 8. Verify the ingress is created and ALB is provisioned
 ➜  kubectl get ingress -A
 ➜  kubectl describe ingress ingress-2048 -n game-2048
+<div align="center">
+  <img src="./public/assets/Capture2.PNG" alt="Logo" width="100%" height="100%">
+</div>
 
 ### Install metrics server using Helm and apply Horizontal Pod Autoscaler (HPA):
 
