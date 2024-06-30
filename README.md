@@ -388,12 +388,10 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
    2. In Integrations -> Agent -> select kubernetes, follow the steps provided
    3. Follow this link ... https://www.datadoghq.com/blog/monitoring-kubernetes-with-datadog/
    4. Deploy the "cluster-agent-rbac.yaml" and rbac.yaml files
-      
      ```bash
       kubectl create -f "https://raw.githubusercontent.com/DataDog/datadog-agent/master/Dockerfiles/manifests/cluster-agent/cluster-agent-rbac.yaml"
       kubectl create -f "https://raw.githubusercontent.com/DataDog/datadog-agent/master/Dockerfiles/manifests/cluster-agent/rbac.yaml"
      ```
-     
     5. Now, let’s install Datadog Agent in Kubernetes using Operator. First, if you haven’t installed Datadog helm repository in your cluster already, you can use the command below to install the       
       repository.
       ```bash
@@ -402,12 +400,10 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
    6. Then you can use this command to install Datadog Operator in your cluster.
       ```bash
       helm install datadog-operator datadog/datadog-operator
-      ```
-      
+      ```      
 <div align="center">
   <img src="./public/assets/install-datadog.png" alt="Logo" width="100%" height="100%">
 </div>
-
    7. After successfully installing Datadog Operator, you should create Secret object that includes your api-key and app-key.
       ```bash
       kubectl create secret generic datadog-secret --from-literal api-key=<DATADOG_API_KEY> --from-literal app-key=<DATADOG_APP_KEY>
