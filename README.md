@@ -391,8 +391,8 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
      ```bash
       kubectl create -f "https://raw.githubusercontent.com/DataDog/datadog-agent/master/Dockerfiles/manifests/cluster-agent/cluster-agent-rbac.yaml"
       kubectl create -f "https://raw.githubusercontent.com/DataDog/datadog-agent/master/Dockerfiles/manifests/cluster-agent/rbac.yaml"
-      ``` 
-   6. Now, let’s install Datadog Agent in Kubernetes using Operator. First, if you haven’t installed Datadog helm repository in your cluster already, you can use the command below to install the       
+     ```
+    6. Now, let’s install Datadog Agent in Kubernetes using Operator. First, if you haven’t installed Datadog helm repository in your cluster already, you can use the command below to install the       
       repository.
       ```bash
       helm repo add datadog https://helm.datadoghq.com
@@ -404,23 +404,25 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
 <div align="center">
   <img src="./public/assets/install-datadog.png" alt="Logo" width="100%" height="100%">
 </div>
-   6. After successfully installing Datadog Operator, you should create Secret object that includes your api-key and app-key.
+
+   8. After successfully installing Datadog Operator, you should create Secret object that includes your api-key and app-key.
       ```bash
       kubectl create secret generic datadog-secret --from-literal api-key=<DATADOG_API_KEY> --from-literal app-key=<DATADOG_APP_KEY>
       ```
-   7. Deploy the "datadog-agent.yaml" files
+   9. Deploy the "datadog-agent.yaml" files
       ```bash
       kubectl apply -f datadog-agent.yaml
       ```
-   8. You can do
+   10. You can do
       ```bash
       kubectl get datadogagent
       ```  
-   9. To monitor the agent installation process. After a while, you can confirm on your Datadog Kubernetes installation page that the installation has been successfully completed.
+   11. To monitor the agent installation process. After a while, you can confirm on your Datadog Kubernetes installation page that the installation has been successfully completed.
  <div align="center">
   <img src="./public/assets/agent-installation-datadog.png" alt="Logo" width="100%" height="100%">
 </div>
-   10. Finally, when you go to Infrastructure then click Kubernetes, you can now monitor your Kubernetes cluster.
+
+   12. Finally, when you go to Infrastructure then click Kubernetes, you can now monitor your Kubernetes cluster.
 <div align="center">
   <img src="./public/assets/k8s.png" alt="Logo" width="100%" height="100%">
 </div>
