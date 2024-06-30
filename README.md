@@ -376,6 +376,9 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
   Using the kubectl autoscale command: kubectl autoscale deployment deployment-2048 --cpu-percent=50 --min=1 --max=3
   Now verify the creation: kubectl get hpa & kubectl describe hpa my-app-hpa
 ```
+<div align="center">
+  <img src="./public/assets/Capture3.PNG" alt="Logo" width="100%" height="100%">
+</div>
 
 ### **Phase 6: Monitoring**
 
