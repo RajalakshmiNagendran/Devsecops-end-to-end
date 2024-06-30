@@ -354,7 +354,7 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
 ➜  kubectl get ingress -A
 ➜  kubectl describe ingress ingress-2048 -n game-2048
 <div align="center">
-  <img src="./public/assets/Untitled4.png" alt="Logo" width="100%" height="100%">
+  <img src="./public/assets/Capture2.PNG" alt="Logo" width="100%" height="100%">
 </div>
 
 ### Install metrics server using Helm and apply Horizontal Pod Autoscaler (HPA):
@@ -377,7 +377,7 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
   Now verify the creation: kubectl get hpa & kubectl describe hpa my-app-hpa
 ```
 <div align="center">
-  <img src="./public/assets/Capture3.PNG" alt="Logo" width="100%" height="100%">
+  <img src="./public/assets/Untitled4.png" alt="Logo" width="100%" height="100%">
 </div>
 
 ### **Phase 6: Monitoring**
