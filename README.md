@@ -432,7 +432,7 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
   **Create alerts in Datadog for critical metrics:**
   1. From the dashboard metrics, click on any of the metric you want to notify, click create metric, give the values according to the snap and click on          create.
 <div align="center">
-  <img src="./public/assets/Capture.png" alt="Logo" width="100%" height="100%">
+  <img src="./public/assets/Capture.PNG" alt="Logo" width="100%" height="100%">
 </div>
 
 ### Deploy Application with ArgoCD
