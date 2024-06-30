@@ -330,7 +330,7 @@ sudo systemctl restart jenkins
 
 In this phase, you'll set up a Kubernetes cluster with node groups. This will provide a scalable environment to deploy and manage your applications.
 
-### Setup Ingress Controller:
+### Setup ALB Ingress Controller:
 
 1. Go to folder "aws-load-balancer-controller-on-eks-cluster" and execute all commands below.
 2. Creating an EKS Cluster
