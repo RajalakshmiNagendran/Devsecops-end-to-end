@@ -380,6 +380,10 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
 
    Set up Datadog to monitor your application.
 
+<div align="center">
+  <img src="./public/assets/dashboard-datadog.png" alt="Logo" width="100%" height="100%">
+</div>
+
    1. Go to https://www.datadoghq.com/ create a login
    2. In Integrations -> Agent -> select kubernetes, follow the steps provided
    3. Follow this link ... https://www.datadoghq.com/blog/monitoring-kubernetes-with-datadog/
