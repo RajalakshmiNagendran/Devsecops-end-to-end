@@ -376,6 +376,9 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
 
 ### **Phase 6: Monitoring**
 
+* To check the dashboard go to: https://us5.datadoghq.com/dash/integration/423/kubernetes-cluster-overview-dashboard?fromUser=false&refresh_mode=sliding&from_ts=1719749972198&to_ts=1719751772198&live=true
+* Kubernetes overview: https://us5.datadoghq.com/orchestration/explorer/pod?explorer-na-groups=false&panel_tab=yaml
+
 1. **Install Datadog agent:**
 
    Set up Datadog to monitor your application.
@@ -417,18 +420,20 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
       ```bash
       kubectl get datadogagent
       ```
-      
   10. To monitor the agent installation process. After a while, you can confirm on your Datadog Kubernetes installation page that the installation has been successfully completed.
 <div align="center">
   <img src="./public/assets/agent-installation-datadog.png" alt="Logo" width="100%" height="100%">
 </div>
-
   11. Finally, when you go to Infrastructure then click Kubernetes, you can now monitor your Kubernetes cluster.
 <div align="center">
   <img src="./public/assets/k8s.png" alt="Logo" width="100%" height="100%">
 </div>
 
   **Create alerts in Datadog for critical metrics:**
+  1. From the dashboard metrics, click on any of the metric you want to notify, click create metric, give the values according to the snap and click on          create.
+<div align="center">
+  <img src="./public/assets/Capture.png" alt="Logo" width="100%" height="100%">
+</div>
 
 ### Deploy Application with ArgoCD
 
