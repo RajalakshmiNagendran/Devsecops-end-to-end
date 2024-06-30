@@ -417,6 +417,7 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
       ```bash
       kubectl get datadogagent
       ```
+      
   10. To monitor the agent installation process. After a while, you can confirm on your Datadog Kubernetes installation page that the installation has been successfully completed.
 <div align="center">
   <img src="./public/assets/agent-installation-datadog.png" alt="Logo" width="100%" height="100%">
