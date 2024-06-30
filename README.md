@@ -404,6 +404,7 @@ In this phase, you'll set up a Kubernetes cluster with node groups. This will pr
 <div align="center">
   <img src="./public/assets/install-datadog.png" alt="Logo" width="100%" height="100%">
 </div>
+
    7. After successfully installing Datadog Operator, you should create Secret object that includes your api-key and app-key.
       ```bash
       kubectl create secret generic datadog-secret --from-literal api-key=<DATADOG_API_KEY> --from-literal app-key=<DATADOG_APP_KEY>
